@@ -55,7 +55,6 @@ class Proposal(Model):
     message = Column(String, nullable=True)
     status = Column(String, nullable=False)
     freelancer = relationship('User', backref='proposals')
-    task = relationship('Task', backref='proposals')
 
 
 class Profile(Model):
